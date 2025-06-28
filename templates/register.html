@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Create New User</h2>
+<form method="post">
+    <input name="username" class="form-control mb-2" placeholder="Username" required>
+    <input type="password" name="password" class="form-control mb-2" placeholder="Password" required>
+    <button class="btn btn-success">Register</button>
+</form>
+{% endblock %}

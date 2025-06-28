@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Update Employee</h2>
+<form method="post">
+    <input name="name" value="{{ emp.name }}" class="form-control mb-2" required>
+    <input name="email" value="{{ emp.email }}" class="form-control mb-2" required>
+    <input name="department" value="{{ emp.department }}" class="form-control mb-2" required>
+    <button class="btn btn-success">Update</button>
+</form>
+{% endblock %}
